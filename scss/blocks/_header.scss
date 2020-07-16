@@ -2,6 +2,8 @@
 .header {
   width: 100%;
   background: $bg;
+  position: absolute;
+  z-index: 1000;
 
   border-bottom: 1px solid $red;
 

@@ -3,6 +3,7 @@
 
 // blocks
 @import "./blocks/header";
+@import "./blocks/intro";
 
 // main styles
 *,
@@ -14,6 +15,7 @@
 
   padding: 0;
   margin: 0;
+  letter-spacing: 0.02em;
 }
 
 body {
@@ -23,6 +25,10 @@ body {
 a {
   text-decoration: none;
   color: $txt-w;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 // container
@@ -42,4 +48,12 @@ a {
 .red-btn {
   border-radius: 2px;
   background: $red;
+}
+
+// owl-dots
+.owl-dots {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translate(50%, 0);
 }

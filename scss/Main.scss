@@ -1,0 +1,45 @@
+// imports
+@import "./colors";
+
+// blocks
+@import "./blocks/header";
+
+// main styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: $txt-w;
+}
+
+// container
+.container {
+  margin: 0 120px;
+}
+
+// titles
+.title {
+  font-size: 48px;
+}
+.background-title {
+  font-size: 144px;
+}
+
+// btns
+.red-btn {
+  border-radius: 2px;
+  background: $red;
+}

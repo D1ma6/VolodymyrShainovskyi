@@ -6,6 +6,7 @@
 @import "./blocks/intro";
 @import "./blocks/about";
 @import "./blocks/services";
+@import "./blocks/work";
 
 // main styles
 *,
@@ -27,6 +28,15 @@ body {
 a {
   text-decoration: none;
   color: $txt-w;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+button {
+  color: $txt-w;
+  border: none;
 
   &:hover {
     cursor: pointer;

@@ -303,6 +303,73 @@
   font-size: 14px;
 }
 
+.work__inner {
+  margin: 120px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work__inner__title {
+  font-size: 48px;
+  font-weight: 500;
+  color: #1b1b1b;
+}
+
+.work__inner__para {
+  font-size: 18px;
+  color: #3d3d3d;
+  max-width: 1148px;
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.work__inner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.work__inner__content__navbar {
+  display: flex;
+  margin: 60px 0 0 0;
+}
+
+.work__inner__content__navbar__link {
+  text-transform: uppercase;
+  padding: 5px 20px;
+  background: #1f1f1f;
+  border-radius: 2px;
+  margin: 0 10px 0 0;
+  transition: background 0.3s ease-in-out;
+}
+
+.work__inner__content__navbar__link:hover {
+  background: #000;
+}
+
+.work__inner__content__navbar__link-active {
+  background: #d33131 !important;
+}
+
+.work__inner__content__container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(auto, 320px));
+  grid-template-rows: repeat(2, minmax(auto, 320px));
+  grid-gap: 20px;
+  max-width: 1340px;
+  margin: 40px 0 0 0;
+}
+
+.work__inner__content__container__item {
+  background: #c4c4c4;
+}
+
+.work__inner__content__btn {
+  padding: 12px 24px;
+  margin: 80px 0 0 0;
+}
+
 *,
 *::before,
 *::after {
@@ -324,6 +391,15 @@ a {
 }
 
 a:hover {
+  cursor: pointer;
+}
+
+button {
+  color: #f2f2f2;
+  border: none;
+}
+
+button:hover {
   cursor: pointer;
 }
 

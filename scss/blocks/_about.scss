@@ -1,0 +1,112 @@
+// about
+.about {
+  // about__inner
+  &__inner {
+    margin: 120px 0 0 0;
+    color: $txt-b;
+
+    display: flex;
+    justify-content: space-between;
+    // about__inner__content
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      // about__inner__content__title
+      &__title {
+        font-size: 48px;
+        font-weight: 500;
+        position: relative;
+
+        &::before {
+          content: "About me";
+          font-size: 144px;
+          opacity: 0.1;
+
+          width: 1000px;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translate(0%, -50%);
+        }
+      }
+      // about__inner__content__para
+      &__para {
+        max-width: 675px;
+        margin: 20px 0 0 0;
+        color: $txt-g;
+        &:nth-of-type(1) {
+          margin: 40px 0 0 0;
+        }
+      }
+      // about__inner__content__hr
+      &__hr {
+        width: 120px;
+        height: 1px;
+        background: $red;
+        margin: 30px 0 0 0;
+      }
+      // about__inner__content__achievements
+      &__achievements {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 510px;
+
+        &__item {
+          padding: 0 0 0 35px;
+          margin: 30px 0 0 0;
+          width: 50%;
+
+          position: relative;
+
+          &::before {
+            content: "";
+            background-image: url("./../icons/checked\ 3.svg");
+            width: 20px;
+            height: 20px;
+
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+      // about__inner__content__btn
+      &__btn {
+        width: 98px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0 0 0;
+      }
+    }
+    // about__inner__img
+    &__img {
+      width: 380px;
+      height: 460px;
+
+      position: relative;
+
+      box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+
+      &::before {
+        content: "";
+        width: 380px;
+        height: 460px;
+
+        border: 1px solid $bg;
+
+        position: absolute;
+        top: -20px;
+        right: -30px;
+        z-index: -1;
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

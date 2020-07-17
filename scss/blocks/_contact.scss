@@ -1,0 +1,86 @@
+// contact
+.contact {
+  // contact__inner
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    margin: 120px 0 0 0;
+
+    // contact__inner__title
+    &__title {
+      font-size: 48px;
+      font-weight: 500;
+      color: $txt-b;
+
+      position: relative;
+
+      &:before {
+        content: "Contact me";
+        font-size: 144px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0, -50%);
+        opacity: 0.1;
+      }
+    }
+    // contact__inner__form
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      margin: 80px 0 0 0;
+
+      // contact__inner__form__container
+      &__container {
+        display: flex;
+        margin: 0 0 25px 0;
+      }
+      // contact__inner__form__name
+      &__name {
+        margin: 0 80px 0 0;
+      }
+
+      & label {
+        font-size: 18px;
+      }
+      & input,
+      textarea {
+        background: #eaeaea;
+        border: 1px solid #d33131;
+        resize: none;
+        margin: 15px 0 0 0;
+        padding: 10px;
+      }
+      & input {
+        width: 280px;
+        height: 50px;
+        &[type="text"],
+        &[type="email"] {
+          font-size: 18px;
+        }
+      }
+      & textarea {
+        width: 100%;
+        height: 400px;
+        font-size: 18px;
+      }
+
+      // contact__inner__form__btn
+      &__btn {
+        align-self: center;
+        justify-self: center;
+
+        margin: 80px 0 0 0;
+
+        & button {
+          padding: 12px 24px;
+          border-radius: 2px;
+        }
+      }
+    }
+  }
+}

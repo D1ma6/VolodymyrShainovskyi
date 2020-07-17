@@ -294,7 +294,34 @@
       <!-- /.testimonials -->
 
       <!-- contact -->
-      <section class="contact"></section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact__inner">
+            <h1 class="contact__inner__title">Contact me</h1>
+            <!-- /.contact__inner__title -->
+            <form class="contact__inner__form" name="contact" method="POST" data-netlify="true">
+              <div class="contact__inner__form__container">
+                <p class="contact__inner__form__name">
+                  <label>Your Name: <br> <input type="text" name="name" /></label>   
+                </p>
+                <p class="contact__inner__form__email">
+                  <label>Your Email: <br> <input type="email" name="email" /></label>
+                </p>
+              </div>
+              <!-- /.contact__inner__form__container -->
+              
+              <p class="contact__inner__form__message">
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p class="contact__inner__form__btn">
+                <button class="red-btn" type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
+          <!-- /.contact__inner -->
+        </div>
+        <!-- /.container -->
+      </section>
       <!-- /.contact -->
     </main>
     <!-- /.main -->
